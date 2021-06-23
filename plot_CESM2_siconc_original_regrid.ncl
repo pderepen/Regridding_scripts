@@ -42,7 +42,7 @@ siconc_rg@_FillValue = 1e+20
 type = "pdf"
 type@wkOrientation = "portrait"
 
-wks = gsn_open_wks(type,"Map_siconc_CESM2_original_regrid_diff")
+wks = gsn_open_wks(type,"Map_siconc_CESM2_original_regrid_ncl")
 gsn_define_colormap(wks,"WhiteBlue")
 gsn_reverse_colormap(wks)
 
@@ -151,7 +151,7 @@ resP@lbTitleFontHeightF         = 0.015
 ;*** Draw panel plot
 gsn_panel(wks,plot,(/2,2/),resP)
 
-; ;*** Move to results folder
-; system("mv Map_siconc_CESM2_original_regrid_diff.pdf ../Results/")
+;*** Move to results folder
+system("mv Map_siconc_CESM2_original_regrid_ncl.pdf Plots/")
 
 end
