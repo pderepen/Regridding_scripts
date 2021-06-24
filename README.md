@@ -6,6 +6,41 @@ This repository contains Jupyter Notebooks that are used to regrid CESM data bet
 
 TBD
 
+## Python environment
+
+To be able to run the different Python scripts in this repository, you'll need to install a few packages. I recommend creating a new, clean environment to avoid any dependency issues.
+
+To do so using Conda:
+
+   * Create a new envrionment (in this case named regrid_env) 
+      ```
+      conda create -n regrid_env python=3.7
+      ```
+   * Activate your new environment
+      ```
+      conda activate regrid_env
+      ```
+   * Install the xESMF package
+      ```
+      conda install -c conda-forge xesmf
+      ```
+   * Install dask and netCDF4 to support all features in xESMF
+      ```
+      conda install -c conda-forge dask netCDF4
+      ```
+   * Install plotting and notebook dependencies (optional)
+      ```
+      conda install -c conda-forge matplotlib cartopy jupyterlab
+      ```
+
+For more information, check out the xESMF installation webpage: <https://xesmf.readthedocs.io/en/latest/installation.html>
+
+Alternatively, you can download the environment file regrid_env.yml from this repository and create a new environment from that file directly.
+
+```
+conda env create --name regrid_env --file=regrid_env.yml
+```
+
 ## Installing Python on your local machine
 
 Python is usually already installed on your machine. To check, type `python --version` in a terminal.
