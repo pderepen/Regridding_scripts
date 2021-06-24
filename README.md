@@ -38,7 +38,7 @@ For more information, check out the xESMF installation webpage: <https://xesmf.r
 Alternatively, you can download the environment file regrid_env.yml from this repository and create a new environment from that file directly.
 
 ```
-conda env create -f regrid_env.yml
+conda env create --name regrid_env --file=regrid_env.yml
 ```
 
 ## Installing Python on your local machine
