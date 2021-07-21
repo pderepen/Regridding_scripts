@@ -4,13 +4,13 @@ This repository contains Jupyter Notebooks for regridding CESM2 sea ice data bet
 
 ## What's in this directory?
 
-***regrid_CESM2_seaice_to_1x1.ipynb*** -> Example script to regrid CESM2 sea ice concentration to a regular 1x1 grid
+***regrid_CESM2_seaice_to_1x1.ipynb*** &rarr; Example script to regrid CESM2 sea ice concentration to a regular 1x1 grid
 
-***plot_CESM2_siconc_regrid.ipynb*** -> Script to plot the regridded sea ice concentration data using a polar stereographic projection
+***plot_CESM2_siconc_regrid.ipynb*** &rarr; Script to plot the regridded sea ice concentration data using a polar stereographic projection
 
-***plot_CESM2_siconc_original_regrid.ncl*** -> A NCL script that plots the original (since NCL does not require a regular grid for plotting) and regridded data side by side
+***plot_CESM2_siconc_original_regrid.ncl*** &rarr; A NCL script that plots the original (since NCL does not require a regular grid for plotting) and regridded data side by side
 
-***regrid_env.yml*** -> Python environment used to run scripts in this directory
+***regrid_env.yml*** &rarr; Python environment used to run scripts in this directory
 
 ## Python environment
 
